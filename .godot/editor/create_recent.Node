@@ -1,0 +1,14 @@
+CollisionShape2D
+AnimationPlayer
+Marker2D
+RemoteTransform2D
+PathFollow2D
+Path2D
+CharacterBody2D
+AnimatedSprite2D
+Timer
+Label
+TextureRect
+HBoxContainer
+MarginContainer
+Control

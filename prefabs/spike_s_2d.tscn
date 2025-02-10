@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bk2072f1o35eb"]
+
+[ext_resource type="Texture2D" uid="uid://cxp7wm1yhmumb" path="res://assets/Commons/Spike.png" id="1_2i8k1"]
+
+[node name="SpikeS2D" type="Sprite2D"]
+texture_repeat = 2
+texture = ExtResource("1_2i8k1")
+region_enabled = true
+region_rect = Rect2(0, 8, 240, 8)

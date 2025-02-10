@@ -1,0 +1,132 @@
+[gd_scene load_steps=16 format=3 uid="uid://11pikbhu1rkg"]
+
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_2lknf"]
+[ext_resource type="Texture2D" uid="uid://b5dfmm43aweup" path="res://assets/Sprite Pack 2/2 - Mr. Mochi/Idle (32 x 32).png" id="2_qv3ip"]
+[ext_resource type="Texture2D" uid="uid://qnecxv5tn7c2" path="res://assets/Sprite Pack 2/2 - Mr. Mochi/Hurt (32 x 32).png" id="2_xj0ow"]
+[ext_resource type="Texture2D" uid="uid://byh7cqqv35vvu" path="res://assets/Sprite Pack 2/2 - Mr. Mochi/Jumping (32 x 32).png" id="3_xwis4"]
+[ext_resource type="Texture2D" uid="uid://b76dkdapak7de" path="res://assets/Sprite Pack 2/2 - Mr. Mochi/Running (32 x 32).png" id="4_a52dq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6pdf4"]
+size = Vector2(12, 13)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aw87a"]
+atlas = ExtResource("2_qv3ip")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wtpvs"]
+atlas = ExtResource("2_qv3ip")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6anpm"]
+atlas = ExtResource("4_a52dq")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vwymt"]
+atlas = ExtResource("4_a52dq")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4t7ye"]
+atlas = ExtResource("4_a52dq")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yiws0"]
+atlas = ExtResource("4_a52dq")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m8545"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_xj0ow")
+}],
+"loop": true,
+"name": &"hurted",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 40.0,
+"texture": SubResource("AtlasTexture_aw87a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtpvs")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_xwis4")
+}],
+"loop": true,
+"name": &"jumping",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6anpm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vwymt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4t7ye")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yiws0")
+}],
+"loop": true,
+"name": &"running",
+"speed": 20.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_shv2f"]
+size = Vector2(16, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mt85m"]
+size = Vector2(12, 4)
+
+[node name="PlayerCB2D" type="CharacterBody2D"]
+collision_mask = 86
+script = ExtResource("1_2lknf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+z_index = 1
+position = Vector2(0, 8.5)
+shape = SubResource("RectangleShape2D_6pdf4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_m8545")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="HurtBoxA2D" type="Area2D" parent="."]
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBoxA2D"]
+position = Vector2(0, 6)
+shape = SubResource("RectangleShape2D_shv2f")
+debug_color = Color(0.830406, 0, 0.0507685, 0.42)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="."]
+
+[node name="RightRC2D" type="RayCast2D" parent="."]
+position = Vector2(8, 9)
+target_position = Vector2(4, 0)
+collision_mask = 5
+
+[node name="LeftRC2D" type="RayCast2D" parent="."]
+position = Vector2(-8, 9)
+target_position = Vector2(-4, 0)
+collision_mask = 4
+
+[node name="HeadColliderA2D" type="Area2D" parent="."]
+collision_mask = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HeadColliderA2D"]
+shape = SubResource("RectangleShape2D_mt85m")
+
+[connection signal="body_entered" from="HurtBoxA2D" to="." method="_on_HurtBoxA2D_body_entered"]
+[connection signal="body_entered" from="HeadColliderA2D" to="." method="_on_HeadColliderA2D_body_entered"]

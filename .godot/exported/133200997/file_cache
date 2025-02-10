@@ -1,0 +1,7 @@
+res://actors/enemy.tscn::2f0f99f6cb1b68199ae0fe1d73447b88::1737243242::res://.godot/exported/133200997/export-61e27e8a0642b62a00179865da5b591c-enemy.scn
+res://actors/player.tscn::6d8c49c72a3abc54753b85cd845da1b9::1737243242::res://.godot/exported/133200997/export-e86f95e5088e93066d258d9192ab0748-player.scn
+res://assets/player.tscn::a1655cdeb6dc0bf0a335b5eba5c16eb6::1736568155::res://.godot/exported/133200997/export-43301691a014635de87ea972c6e7a2e3-player.scn
+res://levels/world_01.tscn::5785808410e76aa0cd3e915b2645a40b::1737243242::res://.godot/exported/133200997/export-bde9b0b2529c5f41f8c8416b7a30fd64-world_01.scn
+res://prefabs/coin.tscn::b5952e2cbbf7aa55ccb67b575e901b14::1737243242::res://.godot/exported/133200997/export-39bbc9b86d6ff472dbd608d74c2b3efc-coin.scn
+res://prefabs/moving_platform.tscn::422f02d329610bc57566668d35baffbb::1737243242::res://.godot/exported/133200997/export-b8b4dc3182f88a6c2aaba450ed03da50-moving_platform.scn
+res://prefabs/hitbox.tscn::a407bebe23d5f659bb1c8c423b23ca63::1737243242::res://.godot/exported/133200997/export-5e61a6088dbfe8a801584a03fb1f0aa8-hitbox.scn

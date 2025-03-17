@@ -2,8 +2,8 @@
 
 extends CharacterBody2D                                                         # Este tipo de nó é usado para situações mais complexas, que exigem movimentação controlada ou detecção de colisão com física, que não é o caso, um `StaticBody2D` ou, mais simples ainda, um `Area2D` já seria suficiente. Existe física e aplicação de impulso nas peças da caixa (um `RigidBody2D`), mas na caixa inteira, não. Então, o autor deve ter escolhido usar um `CharacterBody2D` para a caixa inteira pensando em aplicações futuras, onde a caixa pode ser controlada ou empurrada [DeepSeek].
 
-const boxPieces = preload("res://prefabs/box-pieces.tscn")                      # Cuidado com o carregamento, pois operações de I/O são caras. `preload` carrega apenas na inicialização do jogo, que é ótimo para desempenho, mas gasta memória durante todo o jogo [DeepSeek].
-const coinRigidScene = preload("res://prefabs/coin-rigid.tscn")
+const boxPieces = preload("res://prefabs/box_pieces.tscn")                      # Cuidado com o carregamento, pois operações de I/O são caras. `preload` carrega apenas na inicialização do jogo, que é ótimo para desempenho, mas gasta memória durante todo o jogo [DeepSeek].
+const coinRigidScene = preload("res://prefabs/coin_rigid.tscn")
 
 @onready var anim := $AnimationPlayer
 @onready var spawnCoin := $SpawnCoinM2D
@@ -38,5 +38,5 @@ func spawnCoinOnHit():
 func _initialize_coin(coinRigid: Node2D):
 	coinRigid.global_position = spawnCoin.global_position                       # Aqui o nó já foi adicionado à cena e está pronto para ser manipulado [Qwen].
 	var coinImpulse = Vector2(0.5 * randi_range(impulse, -impulse),\
-	                          -0.75 * impulse)
+							  -0.75 * impulse)
 	coinRigid.apply_impulse(coinImpulse)

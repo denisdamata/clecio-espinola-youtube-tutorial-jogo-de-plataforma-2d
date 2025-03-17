@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://d250g7yu5qdx3"]
 
-[ext_resource type="Script" path="res://scripts/box-pieces.gd" id="1_o2ktq"]
+[ext_resource type="Script" uid="uid://pxkcnhq5ig1c" path="res://scripts/box_pieces.gd" id="1_o2ktq"]
 
 [node name="BoxPiecesRB2D" type="RigidBody2D"]
 script = ExtResource("1_o2ktq")

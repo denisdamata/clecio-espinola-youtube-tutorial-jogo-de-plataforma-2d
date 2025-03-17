@@ -1,6 +1,6 @@
 [gd_scene load_steps=16 format=3 uid="uid://11pikbhu1rkg"]
 
-[ext_resource type="Script" path="res://scripts/player.gd" id="1_2lknf"]
+[ext_resource type="Script" uid="uid://gahxanp2vl13" path="res://scripts/player.gd" id="1_2lknf"]
 [ext_resource type="Texture2D" uid="uid://b5dfmm43aweup" path="res://assets/Sprite Pack 2/2 - Mr. Mochi/Idle (32 x 32).png" id="2_qv3ip"]
 [ext_resource type="Texture2D" uid="uid://qnecxv5tn7c2" path="res://assets/Sprite Pack 2/2 - Mr. Mochi/Hurt (32 x 32).png" id="2_xj0ow"]
 [ext_resource type="Texture2D" uid="uid://byh7cqqv35vvu" path="res://assets/Sprite Pack 2/2 - Mr. Mochi/Jumping (32 x 32).png" id="3_xwis4"]
@@ -113,12 +113,12 @@ debug_color = Color(0.830406, 0, 0.0507685, 0.42)
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="."]
 
 [node name="RightRC2D" type="RayCast2D" parent="."]
-position = Vector2(8, 9)
+position = Vector2(5, 9)
 target_position = Vector2(4, 0)
 collision_mask = 5
 
 [node name="LeftRC2D" type="RayCast2D" parent="."]
-position = Vector2(-8, 9)
+position = Vector2(-5, 9)
 target_position = Vector2(-4, 0)
 collision_mask = 4
 

@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://ctoqca1plklxx"
-path="res://.godot/imported/RevMiniPixel.ttf-d217c9189be0021e5e8e565d5380fd12.fontdata"
+uid="uid://cra7gmuk5gwmf"
+path="res://.godot/imported/MesloLGS NF Bold Italic.ttf-1a23c4ca67a258598e9cfc194fba4c6a.fontdata"
 
 [deps]
 
-source_file="res://assets/Commons/RevMiniPixel.ttf"
-dest_files=["res://.godot/imported/RevMiniPixel.ttf-d217c9189be0021e5e8e565d5380fd12.fontdata"]
+source_file="res://MesloLGS NF Bold Italic.ttf"
+dest_files=["res://.godot/imported/MesloLGS NF Bold Italic.ttf-1a23c4ca67a258598e9cfc194fba4c6a.fontdata"]
 
 [params]
 

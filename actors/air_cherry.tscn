@@ -1,8 +1,8 @@
 [gd_scene load_steps=14 format=3 uid="uid://bgf1k4ljh1ts2"]
 
-[ext_resource type="Texture2D" uid="uid://dc0pmo5wldwib" path="res://assets/Sprite Pack 2/7 - Rocket Cherry/Flying (16 x 32).png" id="1_pxmws"]
-[ext_resource type="Script" path="res://scripts/rocket_cherry.gd" id="1_rf1ad"]
-[ext_resource type="Texture2D" uid="uid://hs3b7u33n87p" path="res://assets/Sprite Pack 2/7 - Rocket Cherry/Hurt_Falling (16 x 32).png" id="2_i1npl"]
+[ext_resource type="Texture2D" uid="uid://c0ob3d0oorraj" path="res://assets/Sprite Pack 2/7 - Rocket Cherry/Flying (16 x 32).png" id="1_pxmws"]
+[ext_resource type="Script" uid="uid://cw64td6thlu61" path="res://scripts/air_cherry.gd" id="1_rf1ad"]
+[ext_resource type="Texture2D" uid="uid://cgtlgypkkdbn8" path="res://assets/Sprite Pack 2/7 - Rocket Cherry/Hurt_Falling (16 x 32).png" id="2_i1npl"]
 [ext_resource type="PackedScene" uid="uid://djwjuitfcqatl" path="res://prefabs/hitbox.tscn" id="3_ymt8a"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ejpjs"]
@@ -47,6 +47,21 @@ _data = {
 }
 point_count = 3
 
+[sub_resource type="Animation" id="Animation_8112g"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Path2D/PathFollow2D:progress_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
 [sub_resource type="Animation" id="Animation_ogvs0"]
 resource_name = "patrol"
 length = 5.0
@@ -64,25 +79,10 @@ tracks/0/keys = {
 "values": [0.0, 0.0, 1.0, 1.0]
 }
 
-[sub_resource type="Animation" id="Animation_8112g"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Path2D/PathFollow2D:progress_ratio")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_dklms"]
 _data = {
-"RESET": SubResource("Animation_8112g"),
-"patrol": SubResource("Animation_ogvs0")
+&"RESET": SubResource("Animation_8112g"),
+&"patrol": SubResource("Animation_ogvs0")
 }
 
 [node name="RocketCherryN2D" type="Node2D"]
@@ -119,12 +119,11 @@ loop = false
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Path2D/PathFollow2D"]
 remote_path = NodePath("../../../CharacterBody2D")
 
-[node name="SpawnEnemyM2D" type="Marker2D" parent="Path2D"]
+[node name="SpawnEnemyM2D" type="Marker2D" parent="Path2D/PathFollow2D"]
+position = Vector2(0, -2.17725)
 
 [node name="FlyingPatrolAP" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_dklms")
+&"": SubResource("AnimationLibrary_dklms")
 }
 autoplay = "patrol"
-
-[connection signal="animation_finished" from="CharacterBody2D/AnimetedSprite2D" to="CharacterBody2D" method="_on_AnimetedSprite2D_animation_finished"]

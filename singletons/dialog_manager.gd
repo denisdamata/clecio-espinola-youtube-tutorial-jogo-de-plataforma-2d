@@ -5,7 +5,7 @@
 
 extends Node
 
-@onready var dialogBoxScene = preload("res://prefabs/dialog-box.tscn")
+@onready var dialogBoxScene = preload("res://prefabs/dialog_box.tscn")
 var pages: Array[String] = []                                                   # O texto completo, todas as páginas.
 var currentPage = 0                                                             # Além do índice para cada letra, também tem um índice para cada página.
 

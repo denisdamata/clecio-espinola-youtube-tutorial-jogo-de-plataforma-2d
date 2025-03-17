@@ -20,7 +20,7 @@ func _ready() -> void:
 	minutes = totalDurationMinutes
 	seconds = totalDurationSeconds
 	
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	updateGlobals()
 	if minutes == 0 && seconds == 0:
 		emit_signal("time_is_up")

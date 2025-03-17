@@ -1,34 +1,35 @@
-[gd_scene load_steps=38 format=3 uid="uid://d2dlffa83g0o"]
+[gd_scene load_steps=39 format=3 uid="uid://d2dlffa83g0o"]
 
-[ext_resource type="Script" path="res://scripts/world-1.gd" id="1_f4iec"]
-[ext_resource type="Texture2D" uid="uid://bgw388cxl2m6p" path="res://assets/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png" id="2_5pblf"]
-[ext_resource type="Texture2D" uid="uid://c28dx3g36ekt7" path="res://assets/Seasonal Tilesets/5 - Misc. universal tiles/Water_frames (16 x 32).png" id="3_htlx6"]
-[ext_resource type="Texture2D" uid="uid://cxpmers007ih1" path="res://assets/Seasonal Tilesets/1 - Grassland/Grassland_entities (16 x 16).png" id="3_yvgjk"]
-[ext_resource type="PackedScene" uid="uid://datgmc8bia5q5" path="res://prefabs/falling-platform.tscn" id="4_5ddlv"]
-[ext_resource type="PackedScene" uid="uid://11pikbhu1rkg" path="res://actors/player.tscn" id="5_dp4bl"]
-[ext_resource type="Texture2D" uid="uid://cs0db3ntxr8bf" path="res://assets/Seasonal Tilesets/1 - Grassland/Background parts/5 - Sky_color.png" id="6_gsjcy"]
-[ext_resource type="Texture2D" uid="uid://qjvco7r1ukak" path="res://assets/Seasonal Tilesets/1 - Grassland/Background parts/4 - Cloud_cover_2.png" id="7_rlynr"]
-[ext_resource type="Shader" path="res://shaders/movement-clouds.gdshader" id="8_1yv6m"]
-[ext_resource type="Texture2D" uid="uid://b323v4iycxutt" path="res://assets/Seasonal Tilesets/1 - Grassland/Background parts/3 - Cloud_cover_1.png" id="9_eh50v"]
-[ext_resource type="Texture2D" uid="uid://bnlcl0kv10ia1" path="res://assets/Seasonal Tilesets/1 - Grassland/Background parts/2 - Hills.png" id="10_78cyg"]
-[ext_resource type="Texture2D" uid="uid://dk84c2vxx0m1m" path="res://assets/Seasonal Tilesets/1 - Grassland/Background parts/1 - Foreground_scenery.png" id="11_3o8gk"]
-[ext_resource type="PackedScene" uid="uid://bp74du2whxl60" path="res://prefabs/moving-platform.tscn" id="12_6xtra"]
-[ext_resource type="PackedScene" uid="uid://cspkm5g6w14it" path="res://prefabs/coin.tscn" id="13_yonxo"]
-[ext_resource type="PackedScene" uid="uid://bbfqnl44u5t6b" path="res://actors/enemy.tscn" id="14_721yy"]
-[ext_resource type="Texture2D" uid="uid://bpt1q144e51uh" path="res://assets/Extras/ui_buttons_arrow_left_NORMAL.png" id="15_rt8f5"]
-[ext_resource type="PackedScene" uid="uid://bgf1k4ljh1ts2" path="res://actors/rocket_cherry.tscn" id="16_8hgc6"]
-[ext_resource type="Texture2D" uid="uid://cci4gg3lgog62" path="res://assets/Extras/ui_buttons_arrow_left_PRESSED.png" id="16_vwjsk"]
-[ext_resource type="Texture2D" uid="uid://cu73ej68w2u0a" path="res://assets/Extras/ui_buttons_arrow_right_NORMAL.png" id="17_fh6p3"]
-[ext_resource type="Texture2D" uid="uid://smtn8kru1xwk" path="res://assets/Extras/ui_buttons_arrow_right_PRESSED.png" id="18_2b6fx"]
-[ext_resource type="Texture2D" uid="uid://5r74tlddy348" path="res://assets/Extras/ui_buttons_arrow_up_NORMAL.png" id="19_x4487"]
-[ext_resource type="Texture2D" uid="uid://jlwt83mfr3a5" path="res://assets/Extras/ui_buttons_arrow_up_PRESSED.png" id="20_ynkgm"]
-[ext_resource type="PackedScene" uid="uid://b0r04umwbxt73" path="res://prefabs/break-box.tscn" id="21_gfhp6"]
-[ext_resource type="PackedScene" uid="uid://x0dix4n8suxv" path="res://prefabs/interactive-notice.tscn" id="22_02pv7"]
-[ext_resource type="PackedScene" uid="uid://ddx7jlbj7rna4" path="res://prefabs/spikes_a_2d.tscn" id="23_1i72q"]
-[ext_resource type="Script" path="res://scripts/hud_manager.gd" id="24_37fy5"]
-[ext_resource type="Texture2D" uid="uid://s8ijxryin4b2" path="res://assets/Mini FX, Items & UI/Common Pick-ups/Coin 1 (16 x 16).png" id="24_pukuu"]
-[ext_resource type="FontFile" uid="uid://ctoqca1plklxx" path="res://assets/Commons/RevMiniPixel.ttf" id="28_vmawb"]
-[ext_resource type="Texture2D" uid="uid://bkljjtdrwa0hn" path="res://assets/Mini FX, Items & UI/Common Pick-ups/heart pixel art 16x16.png" id="29_d1der"]
+[ext_resource type="Script" uid="uid://3igm1ju84r8p" path="res://scripts/world_1.gd" id="1_65yhw"]
+[ext_resource type="Texture2D" uid="uid://bgw388cxl2m6p" path="res://assets/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png" id="2_iaatu"]
+[ext_resource type="Texture2D" uid="uid://c28dx3g36ekt7" path="res://assets/Seasonal Tilesets/5 - Misc. universal tiles/Water_frames (16 x 32).png" id="3_clhh5"]
+[ext_resource type="Texture2D" uid="uid://cxpmers007ih1" path="res://assets/Seasonal Tilesets/1 - Grassland/Grassland_entities (16 x 16).png" id="4_uyr5k"]
+[ext_resource type="PackedScene" uid="uid://datgmc8bia5q5" path="res://prefabs/falling_platform.tscn" id="5_eulxm"]
+[ext_resource type="PackedScene" uid="uid://11pikbhu1rkg" path="res://actors/player.tscn" id="6_x7tof"]
+[ext_resource type="Texture2D" uid="uid://cs0db3ntxr8bf" path="res://assets/Seasonal Tilesets/1 - Grassland/Background parts/5 - Sky_color.png" id="7_5dqdu"]
+[ext_resource type="Texture2D" uid="uid://qjvco7r1ukak" path="res://assets/Seasonal Tilesets/1 - Grassland/Background parts/4 - Cloud_cover_2.png" id="8_m3b5j"]
+[ext_resource type="Shader" uid="uid://c1dv8i6hdsqmx" path="res://shaders/movement_clouds.gdshader" id="9_poqel"]
+[ext_resource type="Texture2D" uid="uid://b323v4iycxutt" path="res://assets/Seasonal Tilesets/1 - Grassland/Background parts/3 - Cloud_cover_1.png" id="10_fk2r7"]
+[ext_resource type="Texture2D" uid="uid://bnlcl0kv10ia1" path="res://assets/Seasonal Tilesets/1 - Grassland/Background parts/2 - Hills.png" id="11_mogo5"]
+[ext_resource type="Texture2D" uid="uid://dk84c2vxx0m1m" path="res://assets/Seasonal Tilesets/1 - Grassland/Background parts/1 - Foreground_scenery.png" id="12_nwmlv"]
+[ext_resource type="PackedScene" uid="uid://bp74du2whxl60" path="res://prefabs/moving_platform.tscn" id="13_73vx1"]
+[ext_resource type="PackedScene" uid="uid://cspkm5g6w14it" path="res://prefabs/coin.tscn" id="14_54mip"]
+[ext_resource type="PackedScene" uid="uid://bbfqnl44u5t6b" path="res://actors/ground_pumpkin.tscn" id="15_yragx"]
+[ext_resource type="PackedScene" uid="uid://bgf1k4ljh1ts2" path="res://actors/air_cherry.tscn" id="16_ipw2m"]
+[ext_resource type="PackedScene" uid="uid://dsnxepbxu8omj" path="res://actors/ground_cherry.tscn" id="17_21mpt"]
+[ext_resource type="Texture2D" uid="uid://bpt1q144e51uh" path="res://assets/Extras/ui_buttons_arrow_left_NORMAL.png" id="17_u2uul"]
+[ext_resource type="Texture2D" uid="uid://cci4gg3lgog62" path="res://assets/Extras/ui_buttons_arrow_left_PRESSED.png" id="18_sjw56"]
+[ext_resource type="Texture2D" uid="uid://cu73ej68w2u0a" path="res://assets/Extras/ui_buttons_arrow_right_NORMAL.png" id="19_ixcba"]
+[ext_resource type="Texture2D" uid="uid://smtn8kru1xwk" path="res://assets/Extras/ui_buttons_arrow_right_PRESSED.png" id="20_2xbwe"]
+[ext_resource type="Texture2D" uid="uid://5r74tlddy348" path="res://assets/Extras/ui_buttons_arrow_up_NORMAL.png" id="21_n5o7a"]
+[ext_resource type="Texture2D" uid="uid://jlwt83mfr3a5" path="res://assets/Extras/ui_buttons_arrow_up_PRESSED.png" id="22_qjgxq"]
+[ext_resource type="PackedScene" uid="uid://b0r04umwbxt73" path="res://prefabs/break_box.tscn" id="23_x1ftr"]
+[ext_resource type="PackedScene" uid="uid://x0dix4n8suxv" path="res://prefabs/interactive_notice.tscn" id="24_7inf4"]
+[ext_resource type="PackedScene" uid="uid://ddx7jlbj7rna4" path="res://prefabs/spikes.tscn" id="25_2hwma"]
+[ext_resource type="Script" uid="uid://dcfvdnfwhmw8e" path="res://scripts/hud_manager.gd" id="26_or5pu"]
+[ext_resource type="Texture2D" uid="uid://s8ijxryin4b2" path="res://assets/Mini FX, Items & UI/Common Pick-ups/Coin 1 (16 x 16).png" id="27_tjr2v"]
+[ext_resource type="FontFile" uid="uid://ctoqca1plklxx" path="res://assets/Commons/RevMiniPixel.ttf" id="28_d7f0i"]
+[ext_resource type="Texture2D" uid="uid://bkljjtdrwa0hn" path="res://assets/Mini FX, Items & UI/Common Pick-ups/heart pixel art 16x16.png" id="29_ne02i"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_qedsf"]
 tile_data = PackedInt32Array(0, 65538, 1, 65536, 65538, 2, 131072, 65538, 3, 1, 131074, 1, 65537, 131074, 2, 131073, 131074, 3, 2, 196610, 1, 65538, 196610, 2, 131074, 196610, 3)
@@ -40,7 +41,7 @@ tile_data = PackedInt32Array(0, 589826, 1, 65536, 589826, 2, 131072, 589826, 3, 
 tile_data = PackedInt32Array(0, 589824, 3, 1, 655360, 3, 2, 786432, 3, 3, 851968, 3)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2uywe"]
-texture = ExtResource("2_5pblf")
+texture = ExtResource("2_iaatu")
 3:1/0 = 0
 3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:1/0/physics_layer_0/polygon_0/one_way = true
@@ -118,7 +119,7 @@ texture = ExtResource("2_5pblf")
 2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_af100"]
-texture = ExtResource("3_htlx6")
+texture = ExtResource("3_clhh5")
 1:1/0 = 0
 1:1/0/z_index = -1
 0:1/0 = 0
@@ -130,7 +131,7 @@ texture = ExtResource("3_htlx6")
 0:0/0/z_index = -1
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_81ln0"]
-texture = ExtResource("3_yvgjk")
+texture = ExtResource("4_uyr5k")
 1:1/0 = 0
 2:1/0 = 0
 3:1/0 = 0
@@ -200,12 +201,12 @@ pattern_1 = SubResource("TileMapPattern_wmidq")
 pattern_2 = SubResource("TileMapPattern_0o07g")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_tb70f"]
-shader = ExtResource("8_1yv6m")
+shader = ExtResource("9_poqel")
 shader_parameter/move_speed = 0.01
 
 [node name="World1N2D" type="Node2D"]
 position = Vector2(300, 100)
-script = ExtResource("1_f4iec")
+script = ExtResource("1_65yhw")
 
 [node name="LevelTM" type="TileMap" parent="."]
 position = Vector2(-29, 1)
@@ -222,11 +223,11 @@ layer_2/tile_data = PackedInt32Array(655430, 1, 0, 655431, 1, 0, 655432, 1, 0, 6
 [node name="FallingPlatformInstances" type="Node2D" parent="."]
 position = Vector2(4, 0)
 
-[node name="FallingPlatformAB2D" parent="FallingPlatformInstances" instance=ExtResource("4_5ddlv")]
+[node name="FallingPlatformAB2D" parent="FallingPlatformInstances" instance=ExtResource("5_eulxm")]
 position = Vector2(-68, 48)
 
-[node name="PlayerCB2D" parent="." instance=ExtResource("5_dp4bl")]
-position = Vector2(135, 67)
+[node name="PlayerCB2D" parent="." instance=ExtResource("6_x7tof")]
+position = Vector2(1269, 67)
 
 [node name="BackgroundPB" type="ParallaxBackground" parent="."]
 offset = Vector2(-5, -50)
@@ -237,7 +238,7 @@ motion_mirroring = Vector2(432, 312)
 
 [node name="texture" type="Sprite2D" parent="BackgroundPB/05"]
 scale = Vector2(3, 3)
-texture = ExtResource("6_gsjcy")
+texture = ExtResource("7_5dqdu")
 centered = false
 
 [node name="04" type="ParallaxLayer" parent="BackgroundPB"]
@@ -248,7 +249,7 @@ motion_mirroring = Vector2(432, 0)
 [node name="texture" type="Sprite2D" parent="BackgroundPB/04"]
 texture_repeat = 2
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("7_rlynr")
+texture = ExtResource("8_m3b5j")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 576, 208)
@@ -261,7 +262,7 @@ motion_mirroring = Vector2(432, 0)
 texture_repeat = 2
 material = SubResource("ShaderMaterial_tb70f")
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("9_eh50v")
+texture = ExtResource("10_fk2r7")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 576, 208)
@@ -273,7 +274,7 @@ motion_mirroring = Vector2(432, 0)
 [node name="texture" type="Sprite2D" parent="BackgroundPB/02"]
 texture_repeat = 2
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("10_78cyg")
+texture = ExtResource("11_mogo5")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 576, 208)
@@ -286,66 +287,75 @@ motion_mirroring = Vector2(432, 0)
 texture_repeat = 2
 position = Vector2(1, 0)
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("11_3o8gk")
+texture = ExtResource("12_nwmlv")
 centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 576, 208)
 
 [node name="MovingPlatformInstances" type="Node2D" parent="."]
 
-[node name="MovingPlatformN2D" parent="MovingPlatformInstances" instance=ExtResource("12_6xtra")]
+[node name="MovingPlatformN2D" parent="MovingPlatformInstances" instance=ExtResource("13_73vx1")]
 position = Vector2(-242, 36)
 moveHorizontal = false
 
-[node name="MovingPlatformN2D2" parent="MovingPlatformInstances" instance=ExtResource("12_6xtra")]
+[node name="MovingPlatformN2D2" parent="MovingPlatformInstances" instance=ExtResource("13_73vx1")]
 position = Vector2(676, -252)
 
-[node name="MovingPlatformN2D3" parent="MovingPlatformInstances" instance=ExtResource("12_6xtra")]
+[node name="MovingPlatformN2D3" parent="MovingPlatformInstances" instance=ExtResource("13_73vx1")]
 position = Vector2(692, 96)
 
 [node name="CoinInstances" type="Node2D" parent="."]
 
-[node name="CoinA2D" parent="CoinInstances" instance=ExtResource("13_yonxo")]
+[node name="CoinA2D" parent="CoinInstances" instance=ExtResource("14_54mip")]
 position = Vector2(-84, 12)
 
-[node name="CoinA2D2" parent="CoinInstances" instance=ExtResource("13_yonxo")]
+[node name="CoinA2D2" parent="CoinInstances" instance=ExtResource("14_54mip")]
 position = Vector2(-60, 12)
 
-[node name="CoinA2D3" parent="CoinInstances" instance=ExtResource("13_yonxo")]
+[node name="CoinA2D3" parent="CoinInstances" instance=ExtResource("14_54mip")]
 position = Vector2(-36, 12)
 
-[node name="CoinA2D4" parent="CoinInstances" instance=ExtResource("13_yonxo")]
+[node name="CoinA2D4" parent="CoinInstances" instance=ExtResource("14_54mip")]
 position = Vector2(348, -12)
 
-[node name="CoinA2D8" parent="CoinInstances" instance=ExtResource("13_yonxo")]
+[node name="CoinA2D8" parent="CoinInstances" instance=ExtResource("14_54mip")]
 position = Vector2(508, -156)
 
-[node name="CoinA2D9" parent="CoinInstances" instance=ExtResource("13_yonxo")]
+[node name="CoinA2D9" parent="CoinInstances" instance=ExtResource("14_54mip")]
 position = Vector2(524, -220)
 
-[node name="CoinA2D5" parent="CoinInstances" instance=ExtResource("13_yonxo")]
+[node name="CoinA2D5" parent="CoinInstances" instance=ExtResource("14_54mip")]
 position = Vector2(556, -268)
 
-[node name="CoinA2D6" parent="CoinInstances" instance=ExtResource("13_yonxo")]
+[node name="CoinA2D6" parent="CoinInstances" instance=ExtResource("14_54mip")]
 position = Vector2(580, -268)
 
-[node name="CoinA2D7" parent="CoinInstances" instance=ExtResource("13_yonxo")]
+[node name="CoinA2D7" parent="CoinInstances" instance=ExtResource("14_54mip")]
 position = Vector2(604, -268)
 
 [node name="EnemyInstances" type="Node2D" parent="."]
 position = Vector2(-30, 0)
 
-[node name="EnemyCB2D" parent="EnemyInstances" instance=ExtResource("14_721yy")]
+[node name="GroundPumpkinCB2D" parent="EnemyInstances" instance=ExtResource("15_yragx")]
 position = Vector2(30, 0)
 
-[node name="EnemyCB2D2" parent="EnemyInstances" instance=ExtResource("14_721yy")]
+[node name="GroundPumpkinCB2D2" parent="EnemyInstances" instance=ExtResource("15_yragx")]
 position = Vector2(338, 52)
 
-[node name="EnemyCB2D3" parent="EnemyInstances" instance=ExtResource("14_721yy")]
+[node name="GroundPumpkinCB2D3" parent="EnemyInstances" instance=ExtResource("15_yragx")]
 position = Vector2(-214, 20)
 
-[node name="RocketCherryN2D" parent="EnemyInstances" instance=ExtResource("16_8hgc6")]
-position = Vector2(1347, 131)
+[node name="AirCherryN2D" parent="EnemyInstances" instance=ExtResource("16_ipw2m")]
+position = Vector2(1616, 130)
+
+[node name="AirCherryN2D2" parent="EnemyInstances" instance=ExtResource("16_ipw2m")]
+position = Vector2(1697, 129)
+
+[node name="AirCherryN2D3" parent="EnemyInstances" instance=ExtResource("16_ipw2m")]
+position = Vector2(1769, 128)
+
+[node name="GroundCherryCB2D" parent="EnemyInstances" instance=ExtResource("17_21mpt")]
+position = Vector2(1393, 68)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 limit_left = -30
@@ -362,42 +372,42 @@ visible = false
 [node name="UILeft" type="TouchScreenButton" parent="MovementControlsCL"]
 position = Vector2(32, 216)
 scale = Vector2(2.5, 2.5)
-texture_normal = ExtResource("15_rt8f5")
-texture_pressed = ExtResource("16_vwjsk")
+texture_normal = ExtResource("17_u2uul")
+texture_pressed = ExtResource("18_sjw56")
 action = "ui_left"
 visibility_mode = 1
 
 [node name="UIRight" type="TouchScreenButton" parent="MovementControlsCL"]
 position = Vector2(144, 216)
 scale = Vector2(2.5, 2.5)
-texture_normal = ExtResource("17_fh6p3")
-texture_pressed = ExtResource("18_2b6fx")
+texture_normal = ExtResource("19_ixcba")
+texture_pressed = ExtResource("20_2xbwe")
 action = "ui_right"
 visibility_mode = 1
 
 [node name="UIJump" type="TouchScreenButton" parent="MovementControlsCL"]
 position = Vector2(528, 216)
 scale = Vector2(2.5, 2.5)
-texture_normal = ExtResource("19_x4487")
-texture_pressed = ExtResource("20_ynkgm")
+texture_normal = ExtResource("21_n5o7a")
+texture_pressed = ExtResource("22_qjgxq")
 action = "ui_accept"
 visibility_mode = 1
 
 [node name="BoxesInstances" type="Node2D" parent="."]
 
-[node name="BreakBoxCB2D" parent="BoxesInstances" instance=ExtResource("21_gfhp6")]
+[node name="BreakBoxCB2D" parent="BoxesInstances" instance=ExtResource("23_x1ftr")]
 position = Vector2(60, 28)
 
-[node name="BreakBoxCB2D2" parent="BoxesInstances" instance=ExtResource("21_gfhp6")]
+[node name="BreakBoxCB2D2" parent="BoxesInstances" instance=ExtResource("23_x1ftr")]
 position = Vector2(212, -36)
 hitpoints = 5
 
-[node name="InteractiveNoticeN2D" parent="." instance=ExtResource("22_02pv7")]
+[node name="InteractiveNoticeN2D" parent="." instance=ExtResource("24_7inf4")]
 position = Vector2(58, 87)
 
 [node name="SpikesInstances" type="Node2D" parent="."]
 
-[node name="SpikesA2D" parent="SpikesInstances" instance=ExtResource("23_1i72q")]
+[node name="SpikesA2D" parent="SpikesInstances" instance=ExtResource("25_2hwma")]
 position = Vector2(795, 157)
 
 [node name="HUDCanvasLayer" type="CanvasLayer" parent="."]
@@ -409,7 +419,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("24_37fy5")
+script = ExtResource("26_or5pu")
 totalDurationMinutes = 2
 totalDurationSeconds = 5
 
@@ -435,12 +445,12 @@ size_flags_vertical = 0
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
-texture = ExtResource("24_pukuu")
+texture = ExtResource("27_tjr2v")
 
 [node name="CoinCounterLabel" type="Label" parent="HUDCanvasLayer/Control/MarginContainer/CoinHBC"]
 layout_mode = 2
 theme_override_constants/outline_size = 4
-theme_override_fonts/font = ExtResource("28_vmawb")
+theme_override_fonts/font = ExtResource("28_d7f0i")
 theme_override_font_sizes/font_size = 16
 text = "0000"
 vertical_alignment = 1
@@ -453,12 +463,12 @@ size_flags_vertical = 8
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 8
-texture = ExtResource("29_d1der")
+texture = ExtResource("29_ne02i")
 
 [node name="LifeSeparatorLabel" type="Label" parent="HUDCanvasLayer/Control/MarginContainer/LifeHBC"]
 layout_mode = 2
 theme_override_constants/outline_size = 4
-theme_override_fonts/font = ExtResource("28_vmawb")
+theme_override_fonts/font = ExtResource("28_d7f0i")
 theme_override_font_sizes/font_size = 16
 text = "x"
 vertical_alignment = 1
@@ -466,7 +476,7 @@ vertical_alignment = 1
 [node name="LifeCounterLabel" type="Label" parent="HUDCanvasLayer/Control/MarginContainer/LifeHBC"]
 layout_mode = 2
 theme_override_constants/outline_size = 4
-theme_override_fonts/font = ExtResource("28_vmawb")
+theme_override_fonts/font = ExtResource("28_d7f0i")
 theme_override_font_sizes/font_size = 16
 text = "03"
 vertical_alignment = 1
@@ -479,7 +489,7 @@ size_flags_vertical = 0
 [node name="TimerLabel" type="Label" parent="HUDCanvasLayer/Control/MarginContainer/TimerHBC"]
 layout_mode = 2
 theme_override_constants/outline_size = 4
-theme_override_fonts/font = ExtResource("28_vmawb")
+theme_override_fonts/font = ExtResource("28_d7f0i")
 theme_override_font_sizes/font_size = 16
 text = "TIME"
 vertical_alignment = 1
@@ -487,7 +497,7 @@ vertical_alignment = 1
 [node name="TimerCounterLabel" type="Label" parent="HUDCanvasLayer/Control/MarginContainer/TimerHBC"]
 layout_mode = 2
 theme_override_constants/outline_size = 4
-theme_override_fonts/font = ExtResource("28_vmawb")
+theme_override_fonts/font = ExtResource("28_d7f0i")
 theme_override_font_sizes/font_size = 16
 text = "00:00"
 vertical_alignment = 1
@@ -500,7 +510,7 @@ size_flags_vertical = 0
 [node name="ScoreLabel" type="Label" parent="HUDCanvasLayer/Control/MarginContainer/ScoreHBC"]
 layout_mode = 2
 theme_override_constants/outline_size = 4
-theme_override_fonts/font = ExtResource("28_vmawb")
+theme_override_fonts/font = ExtResource("28_d7f0i")
 theme_override_font_sizes/font_size = 16
 text = "SCORE"
 vertical_alignment = 1
@@ -508,7 +518,7 @@ vertical_alignment = 1
 [node name="ScoreCounterLabel" type="Label" parent="HUDCanvasLayer/Control/MarginContainer/ScoreHBC"]
 layout_mode = 2
 theme_override_constants/outline_size = 4
-theme_override_fonts/font = ExtResource("28_vmawb")
+theme_override_fonts/font = ExtResource("28_d7f0i")
 theme_override_font_sizes/font_size = 16
 text = "000000"
 vertical_alignment = 1

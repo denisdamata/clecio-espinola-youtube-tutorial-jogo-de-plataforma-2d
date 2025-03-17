@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://4281oyq6oium"
-path="res://.godot/imported/Hurt (16 x 32).png-d3dec4f9d40b637cc0348eaf6530d9fa.ctex"
+uid="uid://b1qhc6dvrq8hi"
+path="res://.godot/imported/Hurt_Falling (16 x 16).png-b8b8f58e49bc2e94ef143c5a7a8fe37c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprite Pack 2/7 - Rocket Cherry/Hurt (16 x 32).png"
-dest_files=["res://.godot/imported/Hurt (16 x 32).png-d3dec4f9d40b637cc0348eaf6530d9fa.ctex"]
+source_file="res://assets/Sprite Pack 2/7 - Rocket Cherry/Hurt_Falling (16 x 16).png"
+dest_files=["res://.godot/imported/Hurt_Falling (16 x 16).png-b8b8f58e49bc2e94ef143c5a7a8fe37c.ctex"]
 
 [params]
 
